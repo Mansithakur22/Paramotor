@@ -1,1 +1,1 @@
-import { FAQ } from "./faq";
+export { Faq } from "./faq";

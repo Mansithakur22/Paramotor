@@ -1,1 +1,1 @@
-import manageMoney from './manageMoney';
+export { ManageMoney } from './manageMoney';

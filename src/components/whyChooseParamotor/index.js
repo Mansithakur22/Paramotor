@@ -1,1 +1,1 @@
-import { WhyChooseParamotor } from "./whyChooseParamotor";
+export { WhyChooseParamotor } from "./whyChooseParamotor";

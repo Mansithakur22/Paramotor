@@ -1,1 +1,1 @@
-export { contactUser } from './contact-us';
+export { ContactUs } from './contact-us';

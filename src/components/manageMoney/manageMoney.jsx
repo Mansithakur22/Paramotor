@@ -1,11 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react'; // Import useState for managing state
-import { Button } from '../ui'; // Ensure you have the correct import for Button
+import { useState } from 'react';
+import { Button } from '../ui';
 
+/**
+ * Renders the manage money section
+ */
 export function ManageMoney() {
-  const [active, setActive] = useState(false); // Initialize state for the button
+  const [active, setActive] = useState(false);
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between p-6 bg-gray-100">
@@ -28,7 +31,7 @@ export function ManageMoney() {
               ? 'bg-white text-black font-semibold hover:text-white'
               : 'bg-gray-500 text-white font-semibold hover:bg-gray-600'
           }`}
-          onClick={() => setActive(!active)} // Toggle active state
+          onClick={() => setActive(!active)}
         >
           Get Free Demo
         </Button>
@@ -46,15 +49,15 @@ export function ManageMoney() {
             <Image
               src="/images/shape-1.png"
               alt="Shape 1"
-              height={150} // Increased height
-              width={150} // Increased width
+              height={150}
+              width={150}
             />
           </div>
           <div>
             <Image
               src="/images/shape-2.png"
               alt="Shape 2"
-              height={150} // Increased height
+              height={150}
               width={150}
             />
           </div>

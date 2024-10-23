@@ -1,6 +1,6 @@
 import { FaqCard } from "./faqCard"; // Ensure you have a proper path to FaqCard
 
-export function FAQ() {
+export function Faq() {
     const cardData = [
         {
             question: 'Can I pay off my loan early?',

@@ -3,7 +3,7 @@
 // import necessary components and styles
 import Image from 'next/image';
 
-export default function Header() {
+export function Header() {
   return (
     <header className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto">

@@ -1,1 +1,1 @@
-import { OurGoal } from "./ourGoal";
+export { OurGoal } from "./ourGoal";

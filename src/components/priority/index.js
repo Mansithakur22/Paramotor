@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Priority() {
+export function Priority() {
   return (
     <div className="pt-90 pb-95 text-center bg-blue-950">
       <div className="flex flex-col items-center justify-center mx-auto">

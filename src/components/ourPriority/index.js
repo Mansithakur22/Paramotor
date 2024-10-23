@@ -1,1 +1,1 @@
-import OurPriority from "./ourPriority";
+export { OurPriority} from "./ourPriority";
