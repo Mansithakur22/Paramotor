@@ -1,3 +1,4 @@
+import { FAQ } from '@/components/faq/faq';
 import { HeroSection } from '@/components/heroSection/heroSection';
 import { ManageMoney } from '@/components/manageMoney/manageMoney';
 import { OurGoal } from '@/components/ourGoal/ourGoal';
@@ -17,6 +18,7 @@ export default function Home() {
       <OurGoal/>
       <OurPriority/>
       <ManageMoney/>
+      <FAQ/>
     </>
   );
 }
