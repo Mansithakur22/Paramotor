@@ -1,0 +1,1 @@
+import { OurGoal } from "./ourGoal";
