@@ -1,0 +1,1 @@
+import { WhyChooseParamotor } from "./whyChooseParamotor";
