@@ -1,26 +1,12 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import { useRef } from 'react';
-
-export function Marquee({speed, threshold, wheelFactor, dragFactor, children}) {
-    const marqueeRef = useRef(null);
-    const slowDown = useRef(false);
-    const isScrolling = useRef(null);
-    const constrainsRef = useRef(null);
+export function Marquee({ children }) {
   return (
-    <motion.div className='flex gap-6 overflow-hidden'>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-      <p className='w-full text-nowrap'>This is a Marquee Text</p>
-    </motion.div>
+    <marquee className="overflow-hidden">
+      <div className="flex gap-8">
+        <p className="text-nowrap">This is a Marquee Text</p>
+        <p className="text-nowrap">This is a Marquee Text</p>
+        <p className="text-nowrap">This is a Marquee Text</p>
+        <p className="text-nowrap">This is a Marquee Text</p>
+      </div>
+    </marquee>
   );
 }

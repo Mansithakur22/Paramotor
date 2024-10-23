@@ -1,14 +1,10 @@
-'use client';
 import Image from 'next/image';
-import { useState } from 'react';
 import { Button } from '../ui';
 
 export function HeroSection() {
-  const [active, setActive] = useState(false);
-
   return (
     <section>
-      <div className="relative h-[680px] py-8">
+      <div className="relative h-[680px] py-8 max-w-7xl mx-auto">
         <Image
           src="/images/bannerimg.png"
           width={2000}
@@ -24,16 +20,7 @@ export function HeroSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <Button
-            className={`${
-              active
-                ? 'bg-white text-black font-semibold hover:text-white'
-                : 'bg-gray-500 text-white font-semibold hover:bg-gray-600'
-            }`}
-            onClick={() => setActive(!active)}
-          >
-           Know More
-          </Button>
+          <Button>Know More</Button>
         </div>
       </div>
     </section>

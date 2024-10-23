@@ -2,7 +2,7 @@ import { Marquee } from './marquee';
 
 export function Partners() {
   return (
-    <div className="flex">
+    <div className="flex max-w-7xl mx-auto">
       <h1 className=" max-w-96 text-4xl">
         <span className="text-primary font-semibold">Paramotor</span> has been
         trusted by 500+ leading companies

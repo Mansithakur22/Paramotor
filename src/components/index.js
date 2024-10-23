@@ -4,7 +4,6 @@ export * from './our-product';
 export * from './header';
 export * from './faq';
 export * from './services';
-export * from './priority';
 export * from './whyChooseParamotor';
 export * from './ourPriority';
 export * from './ourGoal';

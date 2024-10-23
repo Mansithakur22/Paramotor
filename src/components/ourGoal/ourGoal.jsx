@@ -3,7 +3,7 @@ import { Button } from '../ui';
 
 export function OurGoal() {
   return (
-    <section className="flex items-center justify-center h-[500px]">
+    <section className="flex items-center justify-center min-h-[500px] py-10 max-w-7xl mx-auto">
       <div className="flex items-center">
         <div className="grow-1 w-full">
           <div className="max-w-md relative">
