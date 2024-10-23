@@ -14,7 +14,6 @@ export function HeroSection() {
           width={2000}
           height={2000}
           alt="Banner Image"
-          objectFit="cover"
           className="z-0 w-full h-full rounded-2xl"
         />
         <div className="absolute pl-20 w-1/2 inset-0 flex flex-col justify-center items-start text-left text-white z-10 rounded-2xl bg-gray/50">

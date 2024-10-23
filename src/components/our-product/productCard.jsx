@@ -31,7 +31,7 @@ export function ProductCard({ active, data }) {
         ))}
       </div>
       <div className="absolute flex justify-center -bottom-6 w-full">
-        <Button className={active ? 'bg-white text-black font-semibold hover:text-white' : null}>
+        <Button className={active ? 'bg-white text-primary font-semibold hover:bg-white'  : null}>
           Get Started
         </Button>
       </div>

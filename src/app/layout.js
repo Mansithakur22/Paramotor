@@ -9,9 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className=" mx-56">
         {children}
-        </div>
       </body>
     </html>
   );
