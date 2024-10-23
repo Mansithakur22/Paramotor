@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '../ui';
@@ -8,16 +8,17 @@ export function HeroSection() {
 
   return (
     <section>
-      <div className="relative w-full h-[500px]">
+      <div className="relative mx-56 h-[680px] py-8">
         <Image
           src="/images/bannerimg.png"
+          width={2000}
+          height={2000}
           alt="Banner Image"
-          layout="fill"
           objectFit="cover"
-          className="z-0"
+          className="z-0 w-full h-full rounded-2xl"
         />
-        <div className="absolute inset-0 flex flex-col justify-center items-start text-left text-white z-10 bg-black bg-opacity-50 pl-10 pr-10">
-          <h2 className="text-3xl font-bold mb-4">
+        <div className="absolute pl-20 w-1/2 inset-0 flex flex-col justify-center items-start text-left text-white z-10 rounded-2xl bg-gray/50">
+          <h2 className="text-6xl font-bold mb-4">
             Paramotor Prepaid Gift Card
           </h2>
           <p className="text-lg max-w-md mb-6">
@@ -25,14 +26,14 @@ export function HeroSection() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <Button
-            className={`px-6 py-2 ${
+            className={`${
               active
                 ? 'bg-white text-black font-semibold hover:text-white'
                 : 'bg-gray-500 text-white font-semibold hover:bg-gray-600'
             }`}
             onClick={() => setActive(!active)}
           >
-            Get Started
+           Know More
           </Button>
         </div>
       </div>
