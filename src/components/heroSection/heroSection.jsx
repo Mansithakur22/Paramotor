@@ -8,7 +8,7 @@ export function HeroSection() {
 
   return (
     <section>
-      <div className="relative mx-56 h-[680px] py-8">
+      <div className="relative h-[680px] py-8">
         <Image
           src="/images/bannerimg.png"
           width={2000}
