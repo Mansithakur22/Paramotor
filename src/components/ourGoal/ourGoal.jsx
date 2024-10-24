@@ -26,14 +26,14 @@ export function OurGoal() {
           </div>
         </div>
         <div className="ml-6 grow-1 w-full">
-          <h2 className="text-5xl font-bold mb-4">
+          <h2 className="text-5xl/tight font-bold mb-4">
             Our goal is to make online payment easy for everyone.
           </h2>
           <p className="mb-4 text-lg">
             Ornare lectus sit amet est placerat in egestas erat for imperdiet.
             Adipiscing at in tellus integer feugiat.
           </p>
-          <Button className={`hover:bg-red hover:text-white active:text-black`}>
+          <Button>
             Get Free Demo
           </Button>
         </div>

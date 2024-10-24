@@ -9,6 +9,7 @@ import {
   OurPriority,
   OurProduct,
   Partners,
+  ReviewSection,
   Services,
   WhyChooseParamotor,
 } from '~/components';
@@ -24,6 +25,7 @@ export default function Home() {
       <OurGoal />
       <ManageMoney />
       <WhyChooseParamotor />
+      <ReviewSection />
       <OurPriority />
       <Faq />
       <ContactUs />

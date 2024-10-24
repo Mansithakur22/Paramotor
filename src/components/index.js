@@ -11,3 +11,4 @@ export * from './manageMoney';
 export * from './heroSection';
 export * from './footer';
 export * from './contactUs';
+export * from './review';

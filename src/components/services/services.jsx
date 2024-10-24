@@ -23,7 +23,7 @@ const serviceCardsData = [
 
 export function Services() {
   return (
-    <div className="bg-gray py-20">
+    <div className="bg-gray py-32">
       <div className="grid grid-cols-2 pb-10 max-w-7xl mx-auto">
         <h2 className="text-4xl max-w-md font-bold text-gray-900">
           Pay without worry, trust we wont make you sorry
