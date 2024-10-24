@@ -6,7 +6,7 @@ export function Button({ children, className }) {
     <UIButton
       className={twMerge(
         `px-6 py-3 bg-primary rounded-full text-white hover:bg-red-600 
-         disabled:text-gray-500 text-lg`,
+         disabled:text-gray-500 text-lg transition-all duration-300 ease-in-out`,
         className
       )}
     >

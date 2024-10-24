@@ -2,14 +2,11 @@ export function Footer() {
     return (
       <footer className=" bg-gray-800 text-grey py-8">
         <div className="flex flex-row container mx-auto px-4">
-          {/* Company Information Section */}
           <div className="mb-6">
             <p className="text-sm">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text.
             </p>
           </div>
-  
-          {/* Navigation Links Section */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-6">
             <div>
               <h3 className="font-semibold mb-2">Company</h3>

@@ -2,7 +2,8 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "~/components": ["./src/components/index.js"]
+      "~/components": ["./src/components/index.js"],
+      "~/icons": ["./src/icons/index.js"]
     }
   }
 }

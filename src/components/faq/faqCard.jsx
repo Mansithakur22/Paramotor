@@ -1,29 +1,22 @@
-"use client"
-import { useState } from "react";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 export function FaqCard({ question, answer }) {
-    const [isOpen, setIsOpen] = useState(false); // State to manage the visibility of the answer
-
-    const toggleAnswer = () => {
-        setIsOpen(!isOpen); // Toggle the visibility state
-    };
-
-    return (
-        <div className="bg-white p-6 shadow-md rounded-lg w-4/5 mx-auto h-auto min-h-[150px]"> {/* Slightly increase padding, decrease width */}
-            <div className="flex justify-between items-center mb-2">
-                <h3 className="font-semibold text-xl">{question}</h3>
-                <button
-                    onClick={toggleAnswer}
-                    className="text-xl focus:outline-none"
-                >
-                    {isOpen ? '-' : '+'} {/* Change the symbol based on the state */}
-                </button>
-            </div>
-            {isOpen && ( // Conditionally render the answer based on the state
-                <div className="mt-2"> {/* Add margin-top for spacing */}
-                    <p className="text-gray-700">{answer}</p>
-                </div>
-            )}
-        </div>
-    );
+  return (
+    <Disclosure>
+      <div className="rounded-lg shadow-lg text-left px-12 py-6">
+        <DisclosureButton className="group py-2 flex text-left font-semibold flex justify-between w-full items-center">
+          <h2 className="text-xl">{question}</h2>
+          <ChevronDownIcon className="size-5 fill-black/60 group-data-[hover]:fill-black/50 group-data-[open]:rotate-180" />
+        </DisclosureButton>
+        <DisclosurePanel className="text-gray-500 text-left pt-5">
+          {answer}
+        </DisclosurePanel>
+      </div>
+    </Disclosure>
+  );
 }
