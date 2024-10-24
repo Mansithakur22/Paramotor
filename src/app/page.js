@@ -20,11 +20,10 @@ export default function Home() {
       <HeroSection />
       <Partners />
       <Services />
-      <OurPriority />
       <OurProduct />
-      <WhyChooseParamotor />
       <OurGoal />
       <ManageMoney />
+      <WhyChooseParamotor />
       <OurPriority />
       <Faq />
       <ContactUs />
