@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --primary: #003066;
   --secondary: #002249;
-  --gray: #F5F5F5;
+  --gray: #f5f5f5;
 }

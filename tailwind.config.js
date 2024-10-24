@@ -17,7 +17,7 @@ module.exports = {
       keyframes: {
         wiggle: {
           '0%, 100%': {
-            transform: 'translateX(-10%)',
+            transform: 'translateX(10%)',
           },
           '50%': { transform: 'translateY(0)' },
         },
