@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Button } from '../ui';
+import { Button, Transition } from '../ui';
 import { AnimatePresence, motion } from 'framer-motion';
 
 export function HeroSection() {
@@ -17,20 +17,17 @@ export function HeroSection() {
         />
         <div className="absolute pl-20 w-1/2 inset-0 flex flex-col justify-center items-start text-left text-white z-10 rounded-2xl bg-gray/50">
           <AnimatePresence>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              durat
-              className="text-6xl font-bold mb-4"
-            >
+            <Transition className="text-6xl font-bold mb-4">
               Paramotor Prepaid Gift Card
-            </motion.div>
+            </Transition>
           </AnimatePresence>
-          <p className="text-lg max-w-md mb-6">
+          <Transition className="text-lg max-w-md mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <Button>Know More</Button>
+          </Transition>
+          <Transition className="mb-4">
+            <Button>Know More</Button>
+          </Transition>
         </div>
       </div>
     </section>

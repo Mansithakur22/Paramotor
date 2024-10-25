@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { Button } from '../ui';
+import { Button, Transition } from '../ui';
 import { RightIcon } from '@/icons';
+import Image from 'next/image';
 
 export function WhyChooseParamotor() {
   return (
@@ -70,13 +71,16 @@ export function WhyChooseParamotor() {
 
             <div className="flex max-w-2xl w-full justify-between">
               {['brand7.png', 'brand8.png', 'brand9.png', 'brand10.png'].map(
-                (logo, index) => (
-                  <img
-                    className="h-6 object-contain"
-                    src={`/images/${logo}`}
-                    key={index}
-                    alt="logo"
-                  />
+                (logo) => (
+                  <Transition key={logo}>
+                    <Image
+                      className="h-7 object-contain"
+                      height={150}
+                      width={150}
+                      src={`/images/${logo}`}
+                      alt="logo"
+                    />
+                  </Transition>
                 )
               )}
             </div>

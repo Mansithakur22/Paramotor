@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export function OurPriority() {
   return (
-    <section className="py-20 bg-primary">
+    <section className="relative py-20 bg-primary">
       <div className="flex flex-col items-center mx-auto max-w-2xl text-center">
         <Image
           src="/images/yoursecurityourpriority/security-priority.png"
@@ -21,4 +21,10 @@ export function OurPriority() {
       </div>
     </section>
   );
+}
+
+function OurPriorityBg() {
+  return(
+    <Image className='w-5 object-contain' src='/images/yourpriority/bg.png' alt='bg' width={500} height={500}/>
+  )
 }

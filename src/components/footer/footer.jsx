@@ -1,16 +1,14 @@
 export function Footer() {
     return (
       <footer className=" bg-gray-800 text-grey py-8">
-        <div className="flex flex-row container mx-auto px-4">
-          <div className="mb-6">
-            <p className="text-sm">
+        <div className="flex max-w-7xl mx-auto px-4 gap-4">
+          <div className="mb-6 text-base grow w-full">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text.
-            </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-6">
+          <div className="grid grid-cols-3 grow w-full gap-8 mb-6">
             <div>
               <h3 className="font-semibold mb-2">Company</h3>
-              <ul>
+              <ul className="flex gap-1 flex-col">
                 <li><a href="#" className="hover:underline">Our core Businesses</a></li>
                 <li><a href="#" className="hover:underline">Our company purpose</a></li>
                 <li><a href="#" className="hover:underline">Jobs & Careers</a></li>
@@ -19,7 +17,7 @@ export function Footer() {
             </div>
             <div>
               <h3 className="font-semibold mb-2">Solutions</h3>
-              <ul>
+              <ul className="flex gap-1 flex-col">
                 <li><a href="#" className="hover:underline">Compliance Publications</a></li>
                 <li><a href="#" className="hover:underline">Annual Reports</a></li>
                 <li><a href="#" className="hover:underline">CSR Reports</a></li>
@@ -28,7 +26,7 @@ export function Footer() {
             </div>
             <div>
               <h3 className="font-semibold mb-2">Products</h3>
-              <ul>
+              <ul className="flex gap-1 flex-col">
                 <li><a href="#" className="hover:underline">Gift Card</a></li>
                 <li><a href="#" className="hover:underline">Prepaid Gift Card</a></li>
                 <li><a href="#" className="hover:underline">Our job offers</a></li>
